@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <link href="http://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet"/>
+        <title>{{page.title}}</title>
+        <style>
+            body {
+                font: 12pt "Helvetica Neue", Helvetica, sans-serif;
+                font-weight: 300;
+                line-height: 1.5em;
+            }
+            strong {
+                font-weight: 500;
+            }
+            h1 {
+                text-align: center;
+                font: 100pt "Amatic SC", cursive;
+            }
+            h1 a, h1 a:hover {
+                color: black;
+                text-decoration: none;
+            }
+            h1 img {
+                height: 100px;
+                margin-right: 20px;
+                border: none;
+            }
+            h2 {
+                font: 50pt "Amatic SC", cursive;
+            }
+            .thumbnail .caption {
+                text-align: center;
+                font-weight: 500;
+            }
+            section {
+                text-align: justify;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header class="col-md-8 col-md-offset-2">
+                <h1><a href="{{site.baseurl}}"><img src="{{site.baseurl}}img/logo.png"/> Levains</a></h1>
+            </header>
+            <section class="col-md-8 col-md-offset-2">
+                {{content}}
+            </section>
+        </div>
+    </body>
+</html>
